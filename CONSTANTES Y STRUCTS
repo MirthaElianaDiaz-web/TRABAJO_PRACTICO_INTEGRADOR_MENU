@@ -1,0 +1,26 @@
+const int cantMarcas=10;
+const int cantProductos=20;
+const int Fpago=5;
+
+struct Marcas
+{
+    int Codigo;
+    char Nombre;
+};
+//Lote de Productos
+struct Productos
+{
+    int Codigo;
+    string Nombre;
+    float Preventa;
+    float Precompra;
+    int Stock;
+    int CodigodeMarca;
+};
+//lote de formas de pago
+struct FormaDePago
+{
+    string Codigo;
+    string Nombre;
+    int porcentajes;
+};
