@@ -9,6 +9,8 @@ const int cantMarcas=10;
 const int cantProductos=20;
 const int Fpago=5;
 
+//Lote de Marca
+
 struct Marcas {
     int Codigo;
     string Nombre;
