@@ -1,0 +1,11 @@
+int opcion;
+
+    cout<< "ELEGIR UNA OPCION"<<endl;
+    cout<< endl;
+    cout<< "1_Cargar lote de marcas."<<endl;
+    cout<< "2_Cargar lote de productos."<<endl;
+    cout<< "3_Cargar lote de formas de pago."<<endl;
+    cout<< "4_Cargar lote de ventas."<<endl;
+    cout<< "5_Mostrar reportes."<<endl;
+    cout<< "0_Salir"<<endl;
+    cin>> opcion;
