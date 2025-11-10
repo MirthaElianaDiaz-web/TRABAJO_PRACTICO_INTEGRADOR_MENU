@@ -1,0 +1,23 @@
+ int opcion;
+    int Codmarca;
+    string Nombre;
+    int i;
+
+    switch;
+   case 1:
+      do{
+     //carga de marcas
+    for(i=0;i<cantMarcas;i++)
+        {
+        cout<<"INGRESE EL CODIGO DE LA MARCA: "<<endl;
+        cin>> VCodMarca[Codmarca-1]= Codmarca;
+        cout<<"INGRESE NOMBRE DE LA MARCA: "<<endl;
+        cin>> VNombredemarca[Codmarca-1]= Nombre;
+        }
+
+        for (i=0;i<cantMarcas;i++)
+   //Validacion_por_valor_cero{ &marcas.Codigo, }
+   }}
+
+  while(B!=0 && A!=0);
+    break;
