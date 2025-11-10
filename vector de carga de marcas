@@ -1,0 +1,68 @@
+#include <iostream>
+#include "FUNCIONES.h"
+#include <string>
+using namespace std;
+
+const int cantMarcas=10;
+const int cantProductos=20;
+const int cantPagos=5;
+int opcion;
+int Codmarca;
+string Nombre;
+int i;
+string Vnombredemarca[10];
+int Vcodmarca[10];
+int B=0;
+int A=0;
+
+int main()
+{
+    cout<< "ELEGIR UNA OPCION"<<endl;
+    cout<< endl;
+    cout<< "1_Cargar lote de marcas."<<endl;
+    cout<< "2_Cargar lote de productos."<<endl;
+    cout<< "3_Cargar lote de formas de pago."<<endl;
+    cout<< "4_Cargar lote de ventas."<<endl;
+    cout<< "5_Mostrar reportes."<<endl;
+    cout<< "0_Salir"<<endl;
+    cin>> opcion;
+
+    }
+
+{ switch;
+
+   case 1:
+       // do{
+
+ {for(int i=0;i<10;i++){
+        cout<<"INGRESE EL CODIGO DE LA MARCA: "<<endl;
+        cin>>Codmarca;
+        int n=Codmarca-1;
+        Vcodmarca[n]=Codmarca;
+        cout<<"INGRESE NOMBRE DE LA MARCA: "<<endl;
+        cin>>Nombre;
+        Vnombredemarca[n]=Nombre;
+        }}
+//verificacion de valores
+
+ for(int i=0;i<10;i++)
+    {
+       if(Vcodmarca[i]==0)
+            B=1;
+           else{
+            cout<<"Verificacion exitosa";
+                }
+    }
+
+        for(int i=0;i<10;i++)
+    {
+       if (Vnombredemarca[i]=="")
+        {A=1} else
+        {cout<<"Verificacion exitosa";
+        }
+    }
+
+
+          //while();
+
+    break;
