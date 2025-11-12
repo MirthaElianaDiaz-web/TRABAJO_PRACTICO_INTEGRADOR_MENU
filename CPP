@@ -3,6 +3,10 @@
 
 using namespace std;
 
+#include <iostream>
+
+using namespace std;
+
 int opcion;
 
 void Mostrar_Menu()
@@ -18,56 +22,58 @@ void Mostrar_Menu()
     cin>> opcion;
 }
 void Elegir_Menu(int opcion){
-switch
 
-case 1:
+    switch(opcion){
 
-cout<<"Usted està en la carga de Marcas"<<endl<<endl;
 
-void Cargar_V_deMarca ()
+    case 1:
 
-//carga de lote de Marca
+    cout<<"Usted està en la carga de Marcas"<<endl<<endl;
 
-break;
+    void Cargar_V_deMarca ()
 
-case 2
+        //carga de lote de Marca
 
-//carga de lote producto
+    break;
 
-break;
+    case 2
+    }
 
-case 3
+    break;
 
-//carga de lote de formas de pago
+    case 3
 
-break;
+    //carga de lote de formas de pago
 
-case 4
+    break;
 
-//carga de lote lote de procesos
+    case 4
 
-break;
+    //carga de lote lote de procesos
 
-case 5
+    break;
 
-//muestra de reportes
+    case 5
 
-break;
+    //muestra de reportes
 
-case 0
+    break;
 
-//salir
+    case 0
 
-break;
+    //salir
+
+    break;
 
 default
-
+ cout << "Opción no válida. Intente nuevamente." << endl;
 break;
 
 }
 
 
 void Cargar_V_deMarca()
+int Codmarca;
 {
     for (i = 0; i < 10; i++) {
         cout<<"INGRESE EL CODIGO DE LA MARCA: "<<endl;
@@ -81,7 +87,7 @@ void Cargar_V_deMarca()
 }
 void Lote_procesos()
 
-        
+
     {
         cout << "Ingrese el nùmero de compras: ";
         cin >>nrocompra;
@@ -95,7 +101,7 @@ void Lote_procesos()
         cin>>codcliente;
         cout<< "ingrese el dìa: ";
         cin>>dia;
-        
+
         while( nrocompras!= 0)
    {
         // PROCESOS
@@ -138,3 +144,47 @@ int buscarFPIndice(string Codformap[5], string fp){
         if(Codformap[i]==fp) return i;
         }
     return -1;
+
+    //int stock[20]={};
+      //  int codProd[20];{}
+        //string nombreProd[20];
+        //float preVenta[20];{}
+        //float preCompra[20];{}
+        //int codMarca[20];{}
+
+    //carga de lote producto
+    int carga_V_productos(int codProd, string nombreProd[20], float preVenta[20], float preCompra[20], int codMarca[20], int stock [20])
+    for (i=0;i<20,i++){
+        cout<<"Ingrese el codigo del producto: ";
+        cin>>codProd[codProd-1];
+        while (codProd=!0)
+            cout<<"Còdigo invàlido, intentelo nuevamente";
+            break 
+        }
+        
+        cout<<"Ingrese el nombre del producto: ";
+        cin>>nombreProd[nombreProd-1];
+          while (nombreProd=!"")
+            cout<<"Nombre de producto invàlido, intentelo nuevamente";
+            break 
+        }
+
+        cout<<"Ingrese el precio de venta del producto: ";
+        cin>>preVenta[preVenta-1];
+            while (preVenta=!0)
+            cout<<"Precio de venta invàlido, intentelo nuevamente";
+            break 
+
+        cout<<"Ingrese el precio de compra del producto: ";
+        cin>>preCompra[preCompra-1];
+              while (preCompra=!0)
+                
+            break 
+        }
+
+
+        cout<<"Ingrese el còdigo de marca del producto: ";
+        cin>>codMarca[codMarca-1];
+
+        cout<<"Ingrese el stock del producto: ";
+        cin>>stock[stock-1];
