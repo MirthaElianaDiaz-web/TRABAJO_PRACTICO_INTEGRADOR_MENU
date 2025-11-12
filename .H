@@ -7,8 +7,5 @@
 
 int CargarDatosProductos()
 void Mostrar_opciones()
-void Elegir_Menu()
-void Cargar_V_deMarca()
-void Lote_procesos()
-int buscarIndice()
-int buscarFPIndice()
+void Cargar_V_deMarca ()
+
