@@ -1,0 +1,38 @@
+#include <iostream>
+
+using namespace std;
+
+
+        int opcion;
+	    //del menu
+        int i;
+        int n;
+        //marcas
+        string Vnombredemarca[10];{}
+        int Vcodmarca[10];{}
+        //productos
+        int stock[20];{}
+        int codProd[20];{}
+        string nombreProd[20];{}
+        float preVenta[20];{}
+        float preCompra[20];{}
+        int codMarca[20];{}
+        //formas de pago
+        string Formapago[5];{}
+        string Codformap[5];{}
+        int Porcentajes[5];{}
+        bool B=true;
+        bool A=true;
+
+int main()
+{
+void Mostrar_Menu( int opcion)
+
+void Elegir_Menu (int opcion)
+
+void Cargar_V_deMarca (int opcion)
+
+
+
+
+}
