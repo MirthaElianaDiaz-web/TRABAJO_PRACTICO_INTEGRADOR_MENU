@@ -1,3 +1,10 @@
+
+#include <iostream>
+
+using namespace std;
+
+int opcion;
+
 void Mostrar_Menu()
 {
     cout<< "ELEGIR UNA OPCION"<<endl;
@@ -10,11 +17,55 @@ void Mostrar_Menu()
     cout<< "0_Salir"<<endl;
     cin>> opcion;
 }
-void Elegir_Menu(int opcion)
-    switch;
+void Elegir_Menu(int opcion){
+switch
 
-    case 1:
-        default;
+case 1:
+
+cout<<"Usted està en la carga de Marcas"<<endl<<endl;
+
+void Cargar_V_deMarca ()
+
+//carga de lote de Marca
+
+break;
+
+case 2
+
+//carga de lote producto
+
+break;
+
+case 3
+
+//carga de lote de formas de pago
+
+break;
+
+case 4
+
+//carga de lote lote de procesos
+
+break;
+
+case 5
+
+//muestra de reportes
+
+break;
+
+case 0
+
+//salir
+
+break;
+
+default
+
+break;
+
+}
+
 
 void Cargar_V_deMarca()
 {
@@ -28,11 +79,62 @@ void Cargar_V_deMarca()
         Vnombredemarca[n]=Nombre;
         }
 }
+void Lote_procesos()
 
-int BuscarIndiceentre20()
-{
-    for (i = 0; i < 20; i++) {
-            if (N==Codigodeproducto[i]){
-                indice=i;
-            }
-}
+        
+    {
+        cout << "Ingrese el nùmero de compras: ";
+        cin >>nrocompra;
+        cout << "Ingrese el codigo de producto: ";
+        cin >>codpro;
+        cout << "Ingrese la forma de pago: ";
+        cin >>fp;
+        cout<< "Ingrese la cantidad: ";
+        cin >>cant;
+        cout<< " Ingrese el codigo de Cliente: ";
+        cin>>codcliente;
+        cout<< "ingrese el dìa: ";
+        cin>>dia;
+        
+        while( nrocompras!= 0)
+   {
+        // PROCESOS
+        indice = buscarIndice(codProd, codpro, stock; codMarca);
+        fpindice = buscarIndice(Formapago, Codformap, Porcentajes);
+
+        // PUNTO A
+        Mparcial=cant.preVenta[indice];
+        Ventaprodcant[indice]+=cant;
+        Mtotal=Mparcial.(100+(Porcentajes[fpindice]/100));
+        Montorecaudado[indice]+=Mtotal;
+
+
+        // PUNTO C
+        vecCantProdPorEmpl[codVendedor - 101] += cantidad;
+
+        cout << "Ingrese el nùmero de compras: ";
+        cin >>nrocompra;
+        cout << "Ingrese el codigo de producto: ";
+        cin >>codpro;
+        cout << "Ingrese la forma de pago: ";
+        cin >>fp;
+        cout<< "Ingrese la cantidad: ";
+        cin >>cant;
+        cout<< " Ingrese el codigo de Cliente: ";
+        cin>>codcliente;
+        cout<< "ingrese el dìa: ";
+        cin>>dia;
+    }
+int buscarIndice(int codProd[20], int codpro){
+    int i;
+    for(i=0;i<20;i++){
+        if(codProd[i]==codpro) return i;
+        }
+    return -1;
+
+int buscarFPIndice(string Codformap[5], string fp){
+    int i;
+    for(i=0;i<5;i++){
+        if(Codformap[i]==fp) return i;
+        }
+    return -1;
