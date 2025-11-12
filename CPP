@@ -1,0 +1,38 @@
+void Mostrar_Menu()
+{
+    cout<< "ELEGIR UNA OPCION"<<endl;
+    cout<< endl;
+    cout<< "1_Cargar lote de marcas."<<endl;
+    cout<< "2_Cargar lote de productos."<<endl;
+    cout<< "3_Cargar lote de formas de pago."<<endl;
+    cout<< "4_Cargar lote de ventas."<<endl;
+    cout<< "5_Mostrar reportes."<<endl;
+    cout<< "0_Salir"<<endl;
+    cin>> opcion;
+}
+void Elegir_Menu(int opcion)
+    switch;
+
+    case 1:
+        default;
+
+void Cargar_V_deMarca()
+{
+    for (i = 0; i < 10; i++) {
+        cout<<"INGRESE EL CODIGO DE LA MARCA: "<<endl;
+        cin>>Codmarca;
+        int n=Codmarca-1;
+        Vcodmarca[n]=Codmarca;
+        cout<<"INGRESE NOMBRE DE LA MARCA: "<<endl;
+        cin>>Nombre;
+        Vnombredemarca[n]=Nombre;
+        }
+}
+
+int BuscarIndiceentre20()
+{
+    for (i = 0; i < 20; i++) {
+            if (N==Codigodeproducto[i]){
+                indice=i;
+            }
+}
