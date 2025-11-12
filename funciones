@@ -42,3 +42,23 @@ int CargarDatosProductos (Productos, Productos[] int cantProductos){
     cin>> opcion;
 
 }
+//funcion validaCarga consultar a alejandro y juan 
+void validaCarga(int codProd[],nombreProd[],preVenta[],preCompra[],codMarca[],stock[]): { 
+    while(int==0){
+    cout<<"Carga invàlida, intentelo nuevamente";
+    }
+    break
+    } 
+
+    //lote forma de pago
+    char formaPago;
+    int codPago;
+    float porcentaje;
+    
+    for(i=0;i<5,i++):
+     cout<<"Ingrese la forma de pago";
+        cin<<formaPago[formaPago-1];
+    cout<<"Ingrese codigo de forma de pago";
+        cin<<codPago[codPago-1];
+     cout<<"Ingrese el porcentaje de descuento (nùmero negativo) o de interès (nùmero positivo) de su forma de pago";
+        cin<<porcentaje[porcentaje-1];
