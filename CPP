@@ -2,7 +2,7 @@
 #include <string>
 using namespace std;
 
-        int opcion;
+         int opcion;
         int Opcion_reportes;
         int i;
         int n;
@@ -161,6 +161,7 @@ void Lote_procesos(int nrocompra,codpro,cant,codcliente,dia string fp)
         cout<< "ingrese el dìa: ";
         cin>>dia;
 
+
         while( nrocompras!=0)
    {
         // PROCESOS
@@ -179,21 +180,24 @@ void Lote_procesos(int nrocompra,codpro,cant,codcliente,dia string fp)
 //acuCantEF acuCantMP acuCantTR acuCantTC acuCantCT
         switch(fp){
         case EF:
-            fp=="EF";
+         if (fp=="EF"){
             acuCantEF+=Cant;
+            }
         case MP:
-            fp=="MP";
-            acuCantMP+=Cant;
+            if (fp=="MP"){
+            acuCantMP+=Cant;}
         case TR:
-            fp=="TR";
-            acuCantTR+=Cant;
+            if (fp=="TR") {
+            acuCantTR+=Cant;}
         case TC:
-            fp=="TC";
-            acuCantTC+=Cant;
+            if (fp=="TC") {
+            acuCantTC+=Cant;}
         case CT:
-            fp=="CT";
-            acuCantCT+=Cant;
-		break
+            if (fp=="CT") {
+            acuCantCT+=Cant;}
+		break;
+
+		}
 
         // PUNTO C
         vecCantProdPorEmpl[codVendedor - 101] += cantidad;
@@ -294,11 +298,20 @@ void Elegir_Reporte(Opcion_reportes)
     case 1:
          system("cls");
         for (vp=0,vp<20,vp++){
-            cout<<"Recaudacion por productos: "<<endl<< codProd[vp]<<endl<<nombreProd[vp]<<endl<<Montorecaudado<<endl<<Ventaprodcant<<endl<<stockdisponible<<endl;
+            cout<<"Recaudacion por productos: "<<endl<< codProd[vp]<<endl<<nombreProd[vp]<<endl<<Montorecaudado[vp]<<endl<<Ventaprodcant<<endl<<stockdisponible<<endl;
                             }
     case 2:
          system("cls");
-         //porcentajes de ventas por forma de pago
+            pceEF=(acuCantEF*100)/acucant;
+            pceMP=(acuCantMP*100)/acucant;
+            pceTR=(acuCantTR*100)/acucant;
+            pceTC=(acuCantTC*100)/acucant;
+            pceCT=(acuCantCT*100)/acucant;
+            cout<<"EL porcentaje de venta por EFECTIVO es: "<<acuCantEF<<endl;
+            cout<<"EL porcentaje de venta por MERCADOPAGO es: "<<acuCantMP<<endl;
+            cout<<"EL porcentaje de venta por TRANSFERENCIA es: "<<acuCantTR<<endl;
+            cout<<"EL porcentaje de venta por TARJETA DE CREDITO es: "<<acuCantTC<<endl;
+            cout<<"EL porcentaje de venta por criptomoneda es: "<<acuCantCT<<endl;
         break;
 
      case 3:
@@ -361,3 +374,7 @@ void productoSinVentas(bool Vprod[],int indice,){
 
 
                                                 }
+int Calcula_porcentajes().
+        float porcentaje(int num1, int num2):
+            pce[]=(num1*100)/num2;
+            return pce;
