@@ -1,4 +1,7 @@
-
+#include <iostream>
+#include <string>
+#include "FUNCIONES.h"
+using namespace std;
 
         int opcion;
 	    //del menu
@@ -7,6 +10,8 @@
         //marcas
         string Vnombredemarca[10];
         int Vcodmarca[10]={};
+        int Codmarca, i, Vcodmarca, n;
+        string Nombre, Vnombredemarca;
         //productos
         int stock[20]={};
         int codProd[20]={};
@@ -34,16 +39,18 @@
         int Ventaprodcant[20]={};
         float Mtotal=0;
         float Montorecaudado [20]={};
-        bool Contador_compras_realizadas[20]=false;
+        bool Vprod[20];
         int aux;
         int VP[20]={};
 
-
 int main()
+{
+
 {
 void Mostrar_Menu( int opcion)
 
 void Elegir_Menu (int opcion)
 
-
+}
+    return 0;
 }
